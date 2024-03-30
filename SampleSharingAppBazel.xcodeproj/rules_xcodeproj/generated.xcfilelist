@@ -1,0 +1,6 @@
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj~~internal~rules_xcodeproj_generated/generator/xcodeproj/xcodeproj-params/ShareExt.0.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj~~internal~rules_xcodeproj_generated/generator/xcodeproj/xcodeproj-params/iOSApp.1.link.params
+$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/SampleSharingApp/lib.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/SampleSharingApp/rules_xcodeproj/iOSApp/Info.plist
+$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/ShareExtension/lib.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/ShareExtension/rules_xcodeproj/ShareExt/Info.plist

@@ -1,0 +1,32 @@
+load("@build_bazel_rules_apple//apple:ios.bzl", "ios_extension")
+load("@build_bazel_rules_apple//apple:resources.bzl", "apple_resource_group")
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "lib",
+    srcs = glob(["Sources/*.swift"]),
+    module_name = "ShareExt"
+)
+
+apple_resource_group(
+  name = "resources",
+  resources = glob(["Resources/*"]),
+)
+
+ios_extension(
+    name = "ShareExt",
+    bundle_id = "group.seshness.SampleSharingAppBazel.ShareExtension",
+    families = [
+        "iphone",
+        "ipad",
+    ],
+    infoplists = [
+        "Info.plist",
+    ],
+    minimum_os_version = "17.0",
+    resources = [":resources"],
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [":lib"],
+)
